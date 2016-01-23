@@ -13,12 +13,15 @@ def checkbuzz(num):
     else:
         return ""
 
+def checkfizzbuzz(num):
+    word = ""
+    word += checkfizz(num)
+    word += checkbuzz(num)
+    if not word:
+        word = str(num)
+    return word
+
 def runfizzbuzz():
     for i in range(1, 100):
-        word = ""
-        word += checkfizz(i)
-        word += checkbuzz(i)
-        if word:
-            print(word)
-        else:
-            print(i)
+        word = checkfizzbuzz(i)
+        print(word)

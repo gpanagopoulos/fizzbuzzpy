@@ -11,6 +11,14 @@ class FizzbuzzTests(unittest.TestCase):
         result = fizzbuzz.checkbuzz(5)
         self.assertEqual(result, "Buzz")
 
+    def test_checkfizzbuzz(self):
+        result = fizzbuzz.checkfizzbuzz(15)
+        self.assertEqual(result, "FizzBuzz")
+
+    def test_checkfizzbuzz(self):
+        result = fizzbuzz.checkfizzbuzz(1)
+        self.assertEqual(result, "1")
+
     def test_checknotfizz(self):
         result = fizzbuzz.checkfizz(4)
         self.assertEqual(result, "")
