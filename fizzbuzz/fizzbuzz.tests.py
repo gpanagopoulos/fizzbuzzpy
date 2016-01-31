@@ -3,28 +3,28 @@ import fizzbuzz
 
 class FizzbuzzTests(unittest.TestCase):
 
-    def test_checkfizz(self):
-        result = fizzbuzz.checkfizz(3)
+    def test_check_fizz(self):
+        result = fizzbuzz.check_fizz(3)
         self.assertEqual(result, "Fizz")
 
-    def test_checkbuzz(self):
-        result = fizzbuzz.checkbuzz(5)
+    def test_check_buzz(self):
+        result = fizzbuzz.check_buzz(5)
         self.assertEqual(result, "Buzz")
 
-    def test_checkfizzbuzz(self):
-        result = fizzbuzz.checkfizzbuzz(15)
+    def test_check_fizzbuzz(self):
+        result = fizzbuzz.check_fizzbuzz(15)
         self.assertEqual(result, "FizzBuzz")
 
-    def test_checknotfizzbuzz(self):
-        result = fizzbuzz.checkfizzbuzz(1)
+    def test_check_notfizzbuzz(self):
+        result = fizzbuzz.check_fizzbuzz(1)
         self.assertEqual(result, "1")
 
-    def test_checknotfizz(self):
-        result = fizzbuzz.checkfizz(4)
+    def test_check_notfizz(self):
+        result = fizzbuzz.check_fizz(4)
         self.assertEqual(result, "")
 
-    def test_checknotbuzz(self):
-        result = fizzbuzz.checkbuzz(2)
+    def test_check_notbuzz(self):
+        result = fizzbuzz.check_buzz(2)
         self.assertEqual(result, "")
 
 

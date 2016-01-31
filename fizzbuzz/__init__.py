@@ -1,2 +1,2 @@
 import fizzbuzz
-fizzbuzz.runfizzbuzz()
+fizzbuzz.run_fizzbuzz()

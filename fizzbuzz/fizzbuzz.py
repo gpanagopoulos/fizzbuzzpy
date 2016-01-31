@@ -1,27 +1,27 @@
 fizz = "Fizz"
 buzz = "Buzz"
 
-def checkfizz(num):
+def check_fizz(num):
     if num % 3 == 0:
         return fizz
     else:
         return ""
 
-def checkbuzz(num):
+def check_buzz(num):
     if num % 5 == 0:
         return buzz
     else:
         return ""
 
-def checkfizzbuzz(num):
+def check_fizzbuzz(num):
     word = ""
-    word += checkfizz(num)
-    word += checkbuzz(num)
+    word += check_fizz(num)
+    word += check_buzz(num)
     if not word:
         word = str(num)
     return word
 
-def runfizzbuzz():
+def run_fizzbuzz():
     for i in range(1, 100):
-        word = checkfizzbuzz(i)
+        word = check_fizzbuzz(i)
         print(word)
